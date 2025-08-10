@@ -86,4 +86,5 @@ jobs:
             --image=docker.io/${{ secrets.DOCKER_USERNAME }}/my-react-app:latest \
             --platform=managed \
             --region=asia-south1 \
+            --project=${{ secrets.GCP_PROJECT_ID }} \
             --allow-unauthenticated
