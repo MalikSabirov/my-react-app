@@ -84,6 +84,7 @@ jobs:
         run: |
           gcloud run deploy my-react-app \
             --image=docker.io/${{ secrets.DOCKER_USERNAME }}/my-react-app:latest \
+            --port 80 \
             --platform=managed \
             --region=asia-south1 \
             --project=${{ secrets.GCP_PROJECT_ID }} \
