@@ -40,7 +40,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm test
 
   docker:
     name: Build & Push Docker Image
